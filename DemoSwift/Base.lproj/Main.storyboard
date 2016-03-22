@@ -9,7 +9,7 @@
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
-                <viewController automaticallyAdjustsScrollViewInsets="NO" id="BYZ-38-t0r" customClass="ViewController" customModule="DemoSwift" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController automaticallyAdjustsScrollViewInsets="NO" id="BYZ-38-t0r" customClass="ViewController" customModule="NotesSwift" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -83,7 +83,7 @@
         <!--Add Item View Controller-->
         <scene sceneID="x72-QH-Sqt">
             <objects>
-                <viewController id="IwI-lS-teN" customClass="AddItemViewController" customModule="DemoSwift" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="IwI-lS-teN" customClass="AddItemViewController" customModule="NotesSwift" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="kAn-22-NZI"/>
                         <viewControllerLayoutGuide type="bottom" id="Rs1-md-woW"/>
