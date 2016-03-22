@@ -20,8 +20,7 @@ class ViewController: UIViewController,AddItemViewControllerDelegate,UITableView
         self.title="Notes"
         tblList.hidden=true
         tblList.tableFooterView = UIView(frame: CGRectZero)
-        super.viewDidLoad()
-        
+        super.viewDidLoad()        
         // Do any additional setup after loading the view, typically from a nib.
     }
     
