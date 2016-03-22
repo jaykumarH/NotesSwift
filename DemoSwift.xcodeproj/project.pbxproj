@@ -14,6 +14,7 @@
 		696A99221C9FF7C700DEF885 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 696A99211C9FF7C700DEF885 /* Assets.xcassets */; };
 		696A99251C9FF7C700DEF885 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 696A99231C9FF7C700DEF885 /* LaunchScreen.storyboard */; };
 		696A99301C9FF7C700DEF885 /* DemoSwiftTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 696A992F1C9FF7C700DEF885 /* DemoSwiftTests.swift */; };
+		696A993B1CA012C500DEF885 /* AddItemViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 696A993A1CA012C500DEF885 /* AddItemViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +39,7 @@
 		696A992B1C9FF7C700DEF885 /* DemoSwiftTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DemoSwiftTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		696A992F1C9FF7C700DEF885 /* DemoSwiftTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DemoSwiftTests.swift; sourceTree = "<group>"; };
 		696A99311C9FF7C700DEF885 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		696A993A1CA012C500DEF885 /* AddItemViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddItemViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +83,7 @@
 			children = (
 				696A99171C9FF7C600DEF885 /* AppDelegate.swift */,
 				696A99191C9FF7C700DEF885 /* ViewController.swift */,
+				696A993A1CA012C500DEF885 /* AddItemViewController.swift */,
 				696A991B1C9FF7C700DEF885 /* Main.storyboard */,
 				696A99211C9FF7C700DEF885 /* Assets.xcassets */,
 				696A99231C9FF7C700DEF885 /* LaunchScreen.storyboard */,
@@ -201,6 +204,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				696A991A1C9FF7C700DEF885 /* ViewController.swift in Sources */,
+				696A993B1CA012C500DEF885 /* AddItemViewController.swift in Sources */,
 				696A99181C9FF7C600DEF885 /* AppDelegate.swift in Sources */,
 				696A99201C9FF7C700DEF885 /* DemoSwift.xcdatamodeld in Sources */,
 			);
