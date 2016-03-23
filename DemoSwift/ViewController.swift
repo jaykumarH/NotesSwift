@@ -14,17 +14,17 @@ class ViewController: UIViewController,AddItemViewControllerDelegate,UITableView
     @IBOutlet weak var lblStartText: UILabel!
     var tableData=[String]()
     
-    override func viewDidLoad() {
-        
+    override func viewDidLoad()
+    {
         tblList.registerClass(UITableViewCell.self, forCellReuseIdentifier: "cell")
         self.title="Notes"
         tblList.hidden=true
         tblList.tableFooterView = UIView(frame: CGRectZero)
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
     }
     
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?)
+    {
         if segue.identifier == "AddItemViewController" {
             let navigationController = segue.destinationViewController as? UINavigationController
             let addItemViewController = navigationController?.topViewController as? AddItemViewController
@@ -43,10 +43,10 @@ class ViewController: UIViewController,AddItemViewControllerDelegate,UITableView
         tblList.backgroundColor=UIColor(red:169.0/255.0, green: 200.0/255.0, blue:240.0/255.0, alpha: 1.0)
         lblStartText.hidden=true
         self.dismissViewControllerAnimated(true, completion: nil)
-        
     }
     
-    func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+    func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int
+    {
         return tableData.count
     }
     
@@ -63,13 +63,15 @@ class ViewController: UIViewController,AddItemViewControllerDelegate,UITableView
         }
     }
     
-    
-    func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        
+    func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell
+    {
         let cell = tableView.dequeueReusableCellWithIdentifier("cell", forIndexPath: indexPath) as UITableViewCell
         cell.textLabel?.text=tableData[indexPath.row]
         cell.backgroundColor=UIColor(red:169.0/255.0, green: 200.0/255.0, blue:240.0/255.0, alpha: 1.0)
-        cell.accessoryType = UITableViewCellAccessoryType.DisclosureIndicator
+        let imageView=UIImageView(frame: CGRectMake(0, 0,15,15))
+        imageView.image=UIImage(named:"dIndicator")
+        cell.accessoryView=imageView
+        
         return cell
     }
     
@@ -86,6 +88,5 @@ class ViewController: UIViewController,AddItemViewControllerDelegate,UITableView
             }
         }
     }
-    
 }
 

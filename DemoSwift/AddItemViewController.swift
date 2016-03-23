@@ -13,22 +13,14 @@ protocol AddItemViewControllerDelegate
     func controller(controller: AddItemViewController, didAddItem: String)
 }
 
-
-
-class AddItemViewController: UIViewController {
-    
+class AddItemViewController: UIViewController
+{
     var delegate:AddItemViewControllerDelegate?
     @IBOutlet weak var txtField: UITextField!
     
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        // Do any additional setup after loading the view.
-    }
-    
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
+    override func viewDidLoad()
+    {
+        super.viewDidLoad()    }
     
     @IBAction func onCreateClick(sender: AnyObject)
     {
@@ -46,7 +38,8 @@ class AddItemViewController: UIViewController {
         
     }
     
-    @IBAction func onCancelClick(sender: AnyObject) {
+    @IBAction func onCancelClick(sender: AnyObject)
+    {
         self.dismissViewControllerAnimated(true, completion: nil)
     }
     
